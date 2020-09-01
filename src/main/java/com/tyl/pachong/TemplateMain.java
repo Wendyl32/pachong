@@ -21,7 +21,6 @@ import static com.tyl.pachong.config.TemplateConfig.*;
 
 public class TemplateMain {
     public static void main(String[] args) {
-        String path = "renderer_accelerate";
         String resource = "mybatis-config.xml"; //定义配置文件路径
         InputStream inputStream = null;
         try {
@@ -42,7 +41,7 @@ public class TemplateMain {
         for (start = 0; start < end; start += 1) {
             try {
                 //https://movie.douban.com/explore#!type=movie&tag=%E7%83%AD%E9%97%A8&sort=time&page_limit=20&page_start=0
-                String address = "https://xiumi.us/api/templates?tag_ids=3231&tag_category=paper-cp&q&template_category=paper-cp&template_category=booklet-cp&sort=DESC&limit=20&page=" + start;
+                String address = "https://xiumi.us/api/templates?tag_ids=3230&tag_category=paper-cp&q&template_category=paper-cp&template_category=booklet-cp&sort=DESC&limit=20&page=" + start;
 
                 JSONObject dayLine = new GetJson().getHttpJson(address, 1);
                 System.out.println("dayline:" + dayLine);
