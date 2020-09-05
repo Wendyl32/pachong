@@ -16,7 +16,6 @@
         </environment>
     </environments>
     <mappers>
-        <mapper resource="MovieMapper.xml"/>
         <mapper resource="TemplateMapper.xml"/>
     </mappers>
 </configuration>
